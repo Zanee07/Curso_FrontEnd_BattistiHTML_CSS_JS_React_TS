@@ -1,0 +1,273 @@
+
+/* padding individual */
+
+.height-width {
+    height: 200px;
+    width: 100px;
+    padding: 50px;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: aquamarine;
+}
+
+/* Padding individual */
+
+.padding-individual {
+    background-color: #222;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
+/* Shorthand padding  */
+.shorthand {
+    background-color: bisque;
+    padding: 6px 12px 18px 24px;
+}
+
+/* 26 - padding com width--> */
+.without-border-box {
+    background-color: rgb(24, 146, 44);
+    color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 10px;
+    border-radius: 1px red;
+}
+
+.border-box {
+    background-color: rgb(53, 78, 57);
+    color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 500px black;
+}
+
+/* 27 - border */
+.border {
+    border: 5px double red;
+    padding: 10px;
+}
+
+.border-2 {
+    border: 2px dotted darkcyan
+}
+
+.border-radius {
+    background-color: darkmagenta;
+    border:  3px blue;
+    color: white;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.margin {
+    background-color: aqua;
+    margin: 30px;
+}
+
+
+.margin-shorthand {
+    background-color: aquamarine;
+    margin: 55px 70px 30px 5px;
+}
+
+/*  Box model */
+.box-model {
+    
+    margin:  20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 200px;
+    height: 400px;
+}
+
+
+/* text-alignment  */
+.text-alignment {
+    background-color: #845;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* text-decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: red;
+}
+
+.upper {
+    text-transform: uppercase;
+
+}
+
+.lower {
+    text-transform: lowercase;
+
+}
+
+/*espaçamento*/
+
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* font weight */
+
+.thin, .bold, .bolder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* font size */
+
+.tamanho-fonte {
+    font-size: 30px;
+    background-color: #845;
+    color: white;
+}
+
+/*display - uma do lado da outra*/
+
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: aquamarine;
+    display: block;
+    margin: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* static  */
+
+.static {
+    position: static;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+/*  Relative  */
+
+.relative {
+    position: relative;
+    background-color: rgb(19, 184, 68);
+    width: 100px;
+    height: 100px;
+    color: white;
+    top: 100px;
+    left: 40px;
+}
+
+/*  Absoulte  */
+
+.absolute {
+    position: absolute;
+    background-color: rgb(209, 212, 24);
+    width: 100px;
+    height: 100px;
+    color: white;
+    top: 2px;
+}
+
+/* Relative com absolute */
+
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+}
+
+
+.absolute1, 
+.absolute2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(212, 136, 37);
+    position: absolute;
+}
+
+/* Fixo na tela */
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(219, 139, 34);
+    border: 1px solid rgb(72, 26, 182);
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/*  fica fixo quando rola a tela
+  */
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(34, 219, 74);
+    border: 1px solid rgb(15, 162, 207);
+    position: sticky;
+    top: 50px;
+    right: 100px;
+}
+
+/* z index */
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    z-index: 3;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #222;
+    z-index: 2;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: antiquewhite;
+    z-index: 1;
+}
