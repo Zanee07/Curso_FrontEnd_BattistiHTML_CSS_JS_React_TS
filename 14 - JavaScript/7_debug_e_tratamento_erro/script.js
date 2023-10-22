@@ -81,3 +81,25 @@ try {
     console.log(`Erro no programa: ${error}`);
 } 
 
+// 7 - finally
+try {
+    const value = checkNumber("asd")
+    if(!value) {
+        throw new Error("Valores inválido")
+    }
+} catch(error) {
+    console.log(`Opa, problema`)
+}
+
+// 8 - Assertions
+function checkArray(arr) {
+    if(arr.length === 0) {
+       throw new Error("O array precisa ter elementos");
+    } else {
+    console.log(`O array tem ${arr.length} elementos`);
+    }
+}
+
+//checkArray([])
+
+checkArray([1, 2, 3])
