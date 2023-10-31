@@ -78,3 +78,27 @@ console.log(firstLink.getAttribute("href"));
 
 //outra aba
 console.log(firstLink.setAttribute("target", "_blank"));
+
+
+// 11 - Altura e largura
+const footer = document.querySelector("footer")
+
+console.log(footer.offsetWidth)
+console.log(footer.offsetHeight)
+
+console.log(footer.clientWidth)
+console.log(footer.clientHeight)
+
+// 12 - Posiñáo do elemento
+const product1 = products[0]
+
+console.log(product1.getBoundingClientRect())
+
+// 13 - Estilos em JS
+mainContainer.style.color = "red"
+mainContainer.style.backgroundColor = "#333"
+
+// 14 - Alterando estilos de varios elementos
+for(const li of listItens) {
+    li.style.backgroundColor = "red"
+}
