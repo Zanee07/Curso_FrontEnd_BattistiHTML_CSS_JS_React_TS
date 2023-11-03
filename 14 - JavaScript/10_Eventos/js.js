@@ -37,3 +37,30 @@ myTitle.addEventListener("click", (e) => {
     console.log(e.target);
 
 })
+
+// 4 - propagação
+const containerBtn = document.querySelector("#btn-container")
+const btnInsiderContainer = document.querySelector("#div-btn")
+
+containerBtn.addEventListener("click", () => {
+    console.log("Evento 1");
+})
+
+btnInsiderContainer.addEventListener("click", () => {
+    e.stopPropagation()
+    console.log("Evento 2")
+})
+
+// 5 - removendo evento padrão
+const a = document.querySelector("a")
+
+a.addEventListener("click", (e) => {
+    e.preventDefault()
+    console.log("Não alterou a página")
+})
+
+// 6 - eventos de tecla
+document.addEventListener("keyup", (e) => {
+    console.log(`Soltou a tecla ${e.key}`)
+})
+
