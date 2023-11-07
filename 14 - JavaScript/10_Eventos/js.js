@@ -64,3 +64,34 @@ document.addEventListener("keyup", (e) => {
     console.log(`Soltou a tecla ${e.key}`)
 })
 
+// 7 - Outros eventos de mouse
+const mouseEvents = document.querySelector("#mouse")
+
+mouseEvents.addEventListener("mousedown", () => {
+    console.log("Pressionou o botão")
+})
+
+mouseEvents.addEventListener("dbclick", () => {
+    console.log("Clique duplo")
+})
+
+// 8 - Movimento mouse
+
+document.addEventListener("mousemove", (e) => {
+    console.log(`No eixo x: ${e.x}`)
+    console.log(`No eixo y: ${e.y}`)
+})
+
+// 9 - Evento por scroll
+// window.addEventListener("scroll", (e) => {
+//     if(window.pageXOffset)
+// })
+
+// 10 - Eventos de focus (cliente entra no input)
+const input = document.querySelector("#my-input")
+
+input.addEventListener("focus", (e) => {
+    console.log("Entrou no input")
+})
+
+// 11 - evento de carregamento de página
